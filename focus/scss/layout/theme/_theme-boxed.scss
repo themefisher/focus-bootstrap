@@ -1,0 +1,93 @@
+@media (min-width: 992px) {
+    [data-container="boxed"] {
+        #main-wrapper {
+            max-width: 1199px;
+            margin: 0 auto;
+
+            @at-root [direction="rtl"]#{&} {
+                text-align: right;
+            }
+        }
+    }
+
+}
+
+    
+    
+@include custommq($min: 1350px) {
+    [data-layout="vertical"][data-sidebar-style="overlay"][data-container="boxed"][data-header-position="fixed"] {
+        .header {
+            width: 1199px;
+        }
+    }
+}
+
+@include custommq($min: 1200px, $max: 1349px) {
+    [data-layout="vertical"][data-sidebar-style="overlay"][data-container="boxed"][data-header-position="fixed"] {
+        .header {
+            width: 1199px;
+        }
+    }
+}
+
+
+[data-header-position="fixed"][data-layout="horizontal"][data-container="boxed"] {
+    .quixnav {
+        max-width: 1199px;
+    }
+} //ok
+
+[data-layout="horizontal"][data-container="boxed"][data-header-position="fixed"] {
+    .header {
+        width: 1199px;
+    }
+}
+
+[data-layout="horizontal"][data-container="boxed"][data-header-position="fixed"][data-sidebar-style="mini"] {
+    .header {
+        width: 1199px;
+    }
+}
+
+
+[data-container="boxed"] {
+    .metismenu.fixed {
+        left: auto;
+        max-width: 1199px;
+    }
+
+    .page-titles {
+        margin-bottom: 3rem;
+        padding: 15px 15px;
+    }
+
+    .content-body .container-fluid {
+        padding: 0.9375rem 0.9375rem 0 0.9375rem;
+    }
+}
+
+[data-container="boxed"][data-layout="vertical"] {
+    .page-titles {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+[data-layout="vertical"][data-container="boxed"][data-sidebar-position="fixed"][data-header-position="static"][data-sidebar-style="overlay"] {
+    .nav-header {
+        position: absolute;
+    }
+
+    .menu-toggle {
+        .quixnav {
+            position: absolute;
+        }
+    }
+}
+
+[data-container="boxed"][data-sidebar-position="fixed"][data-layout="horizontal"] {
+    .quixnav.fixed {
+        left: auto;
+        max-width: 1199px;
+    }
+}

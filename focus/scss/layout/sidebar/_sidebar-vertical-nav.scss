@@ -1,0 +1,31 @@
+[data-sidebar-position="fixed"][data-layout="vertical"] {
+    .nav-header {
+        position: fixed;
+        // left: auto;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .quixnav {
+        position: fixed;
+        // z-index: 0;
+        .quixnav-scroll {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+
+    .menu-toggle {
+        .quixnav {
+            position: absolute;
+        }
+    }
+}
+
+[data-header-position="fixed"][data-sidebar-position="fixed"][data-sidebar-style="overlay"][data-layout="vertical"][data-container="boxed"] {
+    .quixnav {
+        position: absolute;
+    }
+}
+
+

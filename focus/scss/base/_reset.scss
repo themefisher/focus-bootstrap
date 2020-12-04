@@ -1,0 +1,213 @@
+@import "../abstracts/maps";
+@import "./../vendor/animate/animate.min.css";
+@import "./../vendor/aos/css/aos.min.css";
+@import "./../vendor/perfect-scrollbar/css/perfect-scrollbar.css";
+@import "./../vendor/metismenu/css/metisMenu.min.css";
+* {
+    outline: none;
+    padding: 0;
+    &::after {
+        margin: 0;
+        padding: 0;
+    }
+    &::before {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    max-width: 100%;
+    // &::after {
+    //     content: "";
+    //     height: 500px;
+    //     width: 100%;
+    //     left: 0;
+    //     top: 0;
+    //     background-image: url('./../images/body/1.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: 0;
+    //     background-attachment: fixed;
+    //     position: absolute;
+    //     z-index: -10;
+    // }
+    // &::before {
+    //     content: "";
+    //     height: 300px;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     position: fixed;
+    //     z-index: -9;
+    //     background: $primary;
+    //     // background-image: url('../images/body/12.jpg');
+    // }
+}
+
+p {
+    line-height: 1.8;
+}
+
+.box-shadow-none {
+    box-shadow: none!important;
+}
+
+#main-wrapper {
+    opacity: 0;
+    transition: all 0.25s ease-in;
+    overflow: hidden;
+    position: relative;
+    // background: $body-bg;
+    &.show {
+        opacity: 1;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $body-color;
+    &:hover,
+    &:focus,
+    &.active {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+// .content-body {
+//     .container-fluid {
+//         padding: 0 30px 0;
+//         @include media-breakpoint-down(sm) {
+//             padding: 0 1.5rem 0;
+//             padding: 0 0.9375rem 0;
+//         }
+//     }
+// }
+.content-body {
+    .container {
+        margin-top: 30px;
+    }
+    .container-fluid {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.content-heading {
+    font-size: 16px;
+    margin-bottom: 1.875rem;
+    margin-top: 3.125rem;
+    border-bottom: 1px solid $border;
+    padding-bottom: 10px;
+    @at-root [direction="rtl"] #{&} {
+        text-align: right;
+    }
+}
+
+//change bootstrap default button behaviour on :focus:active 😢
+.btn {
+    &-primary {
+        &:not(:disabled):not(.disabled) {
+            &:active,
+            &.active {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+// Support ticket btn
+.support-ticket {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    z-index: 999999;
+}
+
+.support-ticket-btn {
+    width: 100px;
+    background: #7CB442;
+    animation: 0.7s ease-in-out 0s infinite alternate none running crescendo;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 8px;
+    font-size: 16px;
+    padding: 5px 10px 7px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: rgba(124, 180, 66, 0.7) 0px 8px 35px 0px;
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+//   @keyframes crescendo {
+//     0%   {transform: scale(.8);}
+//     50% {transform: scale(1);}
+//   }
+@-webkit-keyframes crescendo {
+    from {
+        -webkit-transform: translateY(5px) scale(.8);
+        -ms-transform: translateY(5px) scale(.8);
+        transform: translateY(5px) scale(.8);
+    }
+    to {
+        -webkit-transform: translateY(0px) scale(1);
+        -ms-transform: translateY(0px) scale(1);
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes gXGDoR {
+    from {
+        -webkit-transform: translateY(5px) scale(.8);
+        -ms-transform: translateY(5px) scale(.8);
+        transform: translateY(5px) scale(.8);
+    }
+    to {
+        -webkit-transform: translateY(0px) scale(1);
+        -ms-transform: translateY(0px) scale(1);
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes crescendo {
+    from {
+        -webkit-transform: translateY(5px) scale(.8);
+        -ms-transform: translateY(5px) scale(.8);
+        transform: translateY(5px) scale(.8);
+    }
+    to {
+        -webkit-transform: translateY(0px) scale(1);
+        -ms-transform: translateY(0px) scale(1);
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes gXGDoR {
+    from {
+        -webkit-transform: translateY(5px) scale(.8);
+        -ms-transform: translateY(5px) scale(.8);
+        transform: translateY(5px) scale(.8);
+    }
+    to {
+        -webkit-transform: translateY(0px) scale(1);
+        -ms-transform: translateY(0px) scale(1);
+        transform: translateY(0px) scale(1);
+    }
+}

@@ -1,0 +1,116 @@
+[data-container="wide-boxed"] {
+    @media (min-width: 992px) {
+        #main-wrapper {
+            max-width: 1480px;
+            margin: 0 auto;
+        }
+    }
+}
+
+[data-container="wide-boxed"][data-sidebar-style="full"] {
+    @media (min-width: 992px) {
+        .header {
+            width: 100%;
+        }
+        .menu-toggle {
+            .header {
+                width: 100%;
+            }
+        }
+        @at-root [data-header-position="fixed"]#{&} {
+            .header {
+                max-width: 1480px;
+            }
+            .menu-toggle {
+                .header {
+                    max-width: 1480px;
+                }
+            }
+        }
+    }
+}
+
+[data-container="wide-boxed"][data-sidebar-style="mini"] {
+    @media (min-width: 992px) {
+        .header {
+            width: 100%;
+        }
+        @at-root [data-header-position="fixed"]#{&} {
+            .header {
+                max-width: 1480px;
+            }
+        }
+        @at-root [data-header-position="fixed"][data-layout="horizontal"]#{&} {
+            .header {
+                max-width: 1480px;
+            }
+        }
+    }
+}
+
+[data-container="wide-boxed"][data-sidebar-style="compact"] {
+    @media (min-width: 992px) {
+        .header {
+            width: 100%;
+        }
+        @at-root [data-header-position="fixed"]#{&} {
+            .header {
+                max-width: 1480px;
+            }
+        }
+    }
+}
+
+[data-container="wide-boxed"][data-sidebar-style="overlay"] {
+    @media (min-width: 992px) {
+        .header {
+            width: 100%;
+        }
+        @at-root [data-header-position="fixed"]#{&} {
+            .header {
+                max-width: 1480px;
+            }
+        }
+    }
+}
+
+[data-layout="horizontal"][data-container="wide-boxed"] {
+    .header {
+        width: 100%;
+    }
+    @at-root [data-sidebar-style="full"][data-header-position="fixed"]#{&} {
+        .header {
+            max-width: 1480px;
+        }
+    }
+    @at-root [data-sidebar-style="mini"]#{&} {
+        .header {
+            width: 100%;
+        }
+    }
+}
+
+[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"] {
+    .quixnav.fixed {
+        max-width: 1480px;
+        left: 5%;
+        transition: none;
+    }
+    &[direction="rtl"] {
+        .quixnav.fixed {
+            right: 5%;
+        }
+    }
+}
+
+[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"][data-header-position="fixed"] {
+    .quixnav {
+        max-width: 1480px;
+        left: 5%;
+    }
+    &[direction="rtl"] {
+        .quixnav {
+            right: 5%;
+        }
+    }
+}

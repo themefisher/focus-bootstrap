@@ -1,0 +1,127 @@
+//demo styles
+table#example{
+    padding: 3rem 0 4rem 0;
+}
+
+#example2_wrapper {
+    .dataTables_scrollBody {
+        max-height: 33.25rem !important;
+    }
+}
+
+#employees, #custommers {
+    padding: .5rem 0 1rem 0;
+}
+//////////
+
+
+
+
+table.dataTable thead th, table.dataTable thead td{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td{
+    border-top: 0;
+}
+
+table.dataTable tbody tr, table.dataTable tbody td{
+    background: transparent !important;
+}
+
+table.dataTable thead th{
+    color: $dark;
+    font-weight: 600;
+    @at-root [data-theme-version="dark"] & {
+        color: $white;
+    }
+}
+
+table.dataTable tbody td{
+    padding: 15px 18px;
+}
+
+table.dataTable tr.selected{
+    color: $primary;
+}
+
+table.dataTable tfoot th{
+    color: $dark;
+    font-weight: 600;
+    @at-root [data-theme-version="dark"] & {
+        color: $white;
+    }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    border-radius: 50%;
+    color: $primary !important;
+    background: rgba($primary, .1);
+    border: 0 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    border-radius: 50%;
+    color: $primary !important;
+    background: rgba($primary, .1);
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover{
+    background: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover{
+    background: transparent;
+}
+
+.dataTables_wrapper {
+    input[type="search"], input[type="text"], select {
+        border: 1px solid #e2e2e2;
+        padding: .3rem 0.5rem;
+        color: rgba(113, 93, 93, 1);
+        border-radius: 5px;
+        @at-root [data-theme-version="dark"] & {
+            background: $d-bg;
+            border-color: $d-border;
+            color: $white;
+        }
+    }
+}
+
+table.dataTable.no-footer{
+    border-bottom: 0;
+}
+
+
+
+.dataTables_scroll{
+    padding: 2.5rem 0;
+
+    &Foot{
+        padding-top: 1rem;
+    }
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
+    @include media-breakpoint-down(md) {
+        text-align: left;
+    }
+}
+
+table.dataTable.row-border tbody th, 
+table.dataTable.row-border tbody td, 
+table.dataTable.display tbody th, 
+table.dataTable.display tbody td {
+    border-color: $border;
+    @at-root [data-theme-version="dark"] & {
+        border-color: $d-border;
+    }
+}
+
+

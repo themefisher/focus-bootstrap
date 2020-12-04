@@ -1,0 +1,20 @@
+.grid-col {
+    padding: 1rem !important;
+    background:rgba(255,255,255,0.8);
+    // box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1); 
+
+ 
+}
+
+.row.grid {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.row.grid .grid-col:first-child{
+    text-align: left;
+}
+
+
+
+

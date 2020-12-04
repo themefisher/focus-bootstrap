@@ -1,0 +1,112 @@
+
+// Basic Input
+
+.form-control{
+    // border-radius: 0;
+    background: $white;
+    border: 1px solid $border;
+    // height: 45px;
+    color: $dark;
+    &:hover,&:focus,&.active{
+        box-shadow: none;
+        background: $white;
+        color: $dark;
+    }
+}
+
+
+.input-rounded {
+    border-radius: 100px;
+}
+
+
+// Text area
+
+
+
+
+
+// Input Size/
+// .form-control{
+    // min-height: 40px;
+// }
+// .form-control-sm{
+//     min-height: 36px;
+// }
+// .form-control-lg{
+//     min-height: 52px;
+// }
+
+
+
+// Input Group
+
+.input-group-text{
+    background: #656c73;
+    color: $white;
+    border: 1px solid transparent;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    i{
+        color: $white;
+        font-size: 22px;
+    }
+}
+
+
+
+.input-group-prepend .btn,
+.input-group-append .btn {
+    z-index: 0;
+}
+
+
+
+.custom-select{
+    background: none;
+    // height: 45px;
+    border-color: $border;
+    color: $dark;
+    // border-radius: 0px!important;
+    &:focus{
+        box-shadow: none;
+        border-color: $primary;
+        color: $primary;
+    }
+}
+
+
+.custom-file-label{
+    // height: 45px;
+    // border-radius: 0px!important;
+    &:after{
+        background: #656C73;
+        border: 1px solid $border;
+        color: $white;
+    }
+}
+
+.custom_file_input {
+    .input-group-prepend, 
+    .input-group-append {
+        // height: 45px;
+    }
+
+    .custom-file-label::after {
+        height: 100%;
+        // line-height: 2.4;
+    }
+}
+
+
+.form-control:disabled,
+ .form-control[readonly] {
+    background: $white;
+    opacity: 1;
+}
+
+.custom-file-label{
+    background: $white;
+    border-color: $border;
+}

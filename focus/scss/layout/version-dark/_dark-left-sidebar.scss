@@ -1,0 +1,67 @@
+[data-theme-version="dark"] {
+    
+    .quixnav {
+        background-color: $d-bg;
+    
+        .metismenu {
+    
+    
+            &>li {
+    
+                &>a {
+                    color: darken($color: $white, $amount: 30%);
+                }
+    
+                &:hover, 
+                &:focus, 
+                &.mm-active {
+    
+                    &>a {
+                        background-color: transparent;
+                        color: $primary;
+    
+                        &::after {
+                            border-color: transparent transparent $white transparent;
+                        }
+                    }
+                }
+    
+                &.mm-active {
+                    ul {
+    
+                        ul {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+    
+            //one step dropdown
+            ul  {
+                background-color: $d-bg;
+    
+                a {
+    
+                    &:hover,
+                    &:focus, 
+                    &.mm-active {
+                        color: $white;
+                    } 
+                }
+            }
+            
+            a {
+                color: darken($color: $white, $amount: 30%);
+            }
+    
+            .has-arrow {
+                &:after {
+                    border-color: transparent transparent darken($color: $white, $amount: 30%) transparent;
+                }
+            }
+        }
+    }
+    
+    
+
+}

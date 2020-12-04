@@ -1,0 +1,141 @@
+@import "../../abstracts/variable";
+@import "../../abstracts/mixin";
+[data-sidebar-style="full"][data-layout="vertical"] {
+    .menu-toggle {
+        .nav-header {
+            width: 3.75rem;
+            z-index: 999;
+            .brand-logo {
+                padding-left: 0;
+                padding-right: 0;
+                justify-content: center;
+            }
+            .nav-control {
+                .hamburger {
+                    .line {
+                        background-color: $primary!important;
+                        ;
+                    }
+                }
+            }
+        }
+        .header {
+            padding-left: 3.75rem;
+            width: 100%;
+            @at-root [direction="rtl"]#{&} {
+                padding: 0 0.9375rem;
+                padding-right: 3.75rem;
+            }
+        }
+        .quixnav {
+            width: 3.75rem;
+            overflow: visible;
+            position: absolute;
+            .nav-text {
+                display: none;
+            }
+            .slimScrollDiv,
+            .quixnav-scroll {
+                overflow: visible !important;
+            }
+            .metismenu {
+                li {
+                    position: relative;
+                    a {
+                        padding: 0.8125rem 0.9375rem;
+                    }
+                    &>ul {
+                        position: absolute;
+                        left: 3.75rem;
+                        top: 2.9375rem;
+                        width: 11.875rem;
+                        z-index: 1001;
+                        display: none;
+                        padding-left: 1px;
+                        // box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);
+                        height: auto !important;
+                        @at-root [direction="rtl"]#{&} {
+                            left: auto;
+                            right: 3.75rem;
+                            // box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            ul {
+                                // display: block;
+                                left: 11.8125rem;
+                                top: 0;
+                            }
+                        }
+                    }
+                    &:hover>ul {
+                        display: block;
+                        height: auto;
+                        overflow: visible;
+                    }
+                }
+                &>li {
+                    transition: all 0.4s ease-in-out;
+                    &>a {
+                        &.has-arrow {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                    &:hover {
+                        &:nth-last-child(-n + 1) {
+                            &>ul {
+                                bottom: 2.9375rem;
+                                top: auto;
+                                box-shadow: 6px -6px 10px rgba(0, 0, 0, 0.15);
+                                @at-root [direction="rtl"]#{&} {
+                                    box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.15);
+                                }
+                            }
+                        }
+                        &>a {
+                            width: 15.625rem;
+                            .nav-text {
+                                display: inline-block;
+                                padding-left: 1.6875rem;
+                                @at-root [direction="rtl"]#{&} {
+                                    padding-left: auto;
+                                    padding-right: 1.6875rem;
+                                }
+                            }
+                        }
+                        &>ul {
+                            height: auto !important;
+                            a {
+                                padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+                                margin-left: -.1rem;
+                            }
+                            ul a {
+                                padding: 0.625rem 0.9375rem 0.625rem 3rem;
+                                margin-left: -.1rem;
+                            }
+                        }
+                    }
+                }
+                .nav-label,
+                .nav-badge {
+                    display: none;
+                }
+            }
+        }
+        .content-body {
+            margin-left: 3.75rem;
+            @at-root [direction="rtl"]#{&} {
+                margin-right: 3.75rem;
+                margin-left: auto;
+            }
+        }
+        &+.footer {
+            padding-left: 3.75rem;
+            @at-root [direction="rtl"]#{&} {
+                padding-left: 0;
+                padding-right: 3.75rem;
+            }
+        }
+    }
+}

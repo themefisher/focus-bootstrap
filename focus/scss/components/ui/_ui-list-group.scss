@@ -1,0 +1,17 @@
+.list-group-item {
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid $border;
+    @at-root [data-theme-version="dark"] & {
+        border-color: $d-border;
+    }
+}
+
+.list-group-item.disabled, .list-group-item:disabled {
+    color: #fff;
+    background-color: #777;
+}
+
+
+// .list-group-item-action {
+//     color: #fff;
+// }

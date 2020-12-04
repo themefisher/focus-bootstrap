@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    </li> -->
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Dashboard 1</a></li>
+                            <li><a href="./index2.html">Dashboard 2</a></li></ul>
+                    </li>
+                    
+                    <li class="nav-label">Apps</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-app-store"></i><span class="nav-text">Apps</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./app-profile.html">Profile</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./email-compose.html">Compose</a></li>
+                                    <li><a href="./email-inbox.html">Inbox</a></li>
+                                    <li><a href="./email-read.html">Read</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./app-calender.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-chart-bar-33"></i><span class="nav-text">Charts</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./chart-flot.html">Flot</a></li>
+                            <li><a href="./chart-morris.html">Morris</a></li>
+                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
+                            <li><a href="./chart-chartist.html">Chartist</a></li>
+                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
+                            <li><a href="./chart-peity.html">Peity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Components</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-world-2"></i><span class="nav-text">Bootstrap</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ui-accordion.html">Accordion</a></li>
+                            <li><a href="./ui-alert.html">Alert</a></li>
+                            <li><a href="./ui-badge.html">Badge</a></li>
+                            <li><a href="./ui-button.html">Button</a></li>
+                            <li><a href="./ui-modal.html">Modal</a></li>
+                            <li><a href="./ui-button-group.html">Button Group</a></li>
+                            <li><a href="./ui-list-group.html">List Group</a></li>
+                            <li><a href="./ui-media-object.html">Media Object</a></li>
+                            <li><a href="./ui-card.html">Cards</a></li>
+                            <li><a href="./ui-carousel.html">Carousel</a></li>
+                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
+                            <li><a href="./ui-popover.html">Popover</a></li>
+                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
+                            <li><a href="./ui-tab.html">Tab</a></li>
+                            <li><a href="./ui-typography.html">Typography</a></li>
+                            <li><a href="./ui-pagination.html">Pagination</a></li>
+                            <li><a href="./ui-grid.html">Grid</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-plug"></i><span class="nav-text">Plugins</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./uc-select2.html">Select 2</a></li>
+                            <li><a href="./uc-nestable.html">Nestedable</a></li>
+                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
+                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
+                            <li><a href="./uc-toastr.html">Toastr</a></li>
+                            <li><a href="./map-jqvmap.html">Jqv Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="widget-basic.html" aria-expanded="false"><i class="icon icon-globe-2"></i><span
+                                class="nav-text">Widget</span></a></li>
+                    <li class="nav-label">Forms</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-form"></i><span class="nav-text">Forms</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./form-element.html">Form Elements</a></li>
+                            <li><a href="./form-wizard.html">Wizard</a></li>
+                            <li><a href="./form-editor-summernote.html">Summernote</a></li>
+                            <li><a href="form-pickers.html">Pickers</a></li>
+                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Table</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-layout-25"></i><span class="nav-text">Table</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
+                            <li><a href="table-datatable-basic.html">Datatable</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-label">Extra</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-copy-06"></i><span class="nav-text">Pages</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-register.html">Register</a></li>
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./page-error-400.html">Error 400</a></li>
+                                    <li><a href="./page-error-403.html">Error 403</a></li>
+                                    <li><a href="./page-error-404.html">Error 404</a></li>
+                                    <li><a href="./page-error-500.html">Error 500</a></li>
+                                    <li><a href="./page-error-503.html">Error 503</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <span class="ml-1">Piety</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Charts</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Piety</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-6">
+                                        <h4 class="card-title mb-4">Bar Color 1</h4>
+                                        <div><span class="bar-colours-1">5,3,9,6,5,9,7,3,5,2</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <h4 class="card-title mb-4">Bar Color 2</h4>
+                                        <div><span class="bar-colours-2">5,3,2,-1,-3,-2,2,3,5,2</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <h4 class="card-title mb-4">Bar Color 3</h4>
+                                        <div><span class="bar-colours-3">0,-3,-6,-4,-5,-4,-7,-3,-5,-2</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <h4 class="card-title mb-4">Pie Color</h4>
+                                        <div><span class="pie-colours-2">5,3,9,6,5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4 class="card-title mb-4">Attributes</h4>
+                                        <div class=" row">
+                                            <div class="col-md-2 col-sm-4 col-6"><span class="data-attr" data-peity='{ "fill": ["rgb(192, 10, 39)", "rgba(192, 10, 39, .5)"],    "innerRadius": 10, "radius": 40 }'>1/7</span>
+                                            </div>
+                                            <div class="col-md-2 col-sm-4 col-6 mt-3 mt-md-0"><span class="data-attr" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgba(0, 0, 128, .5)"], "innerRadius": 14, "radius": 36 }'>2/7</span>
+                                            </div>
+                                            <div class="col-md-2 col-sm-4 col-6 mt-3 mt-md-0"><span class="data-attr" data-peity='{ "fill": ["rgb(0, 171, 197)", "rgba(0, 171, 197, .5)"], "innerRadius": 16, "radius": 32 }'>3/7</span>
+                                            </div>
+                                            <div class="col-md-2 col-sm-4 col-6 mt-3 mt-md-0"><span class="data-attr" data-peity='{ "fill": ["rgb(206, 29, 118)", "rgba(206, 29, 118, .5)"],  "innerRadius": 18, "radius": 28 }'>4/7</span>
+                                            </div>
+                                            <div class="col-md-2 col-sm-4 col-6 mt-3 mt-md-0"><span class="data-attr" data-peity='{ "fill": ["rgb(7, 135, 234)", "rgba(7, 135, 234, .5)"],   "innerRadius": 20, "radius": 24 }'>5/7</span>
+                                            </div>
+                                            <div class="col-md-2 col-sm-4 col-6 mt-3 mt-md-0"><span class="data-attr" data-peity='{ "fill": ["#f21780", "rgba(242, 23, 128, .1)"], "innerRadius": 18, "radius": 20 }'>6/7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Bar Chart</h4>
+                                        <div class="px-4"><span class="bar" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgb(7, 135, 234)"]}'>6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Bar Chart</h4>
+                                        <div class="px-4"><span class="bar" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgb(7, 135, 234)"]}'>6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Bar Chart</h4>
+                                        <div class="px-4"><span class="bar" data-peity='{ "fill": ["rgb(7, 135, 234)", "rgb(0, 0, 128)"]}'>6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Line Chart</h4>
+                                        <div class="px-4"><span class="peity-line" data-width="100%">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Line Chart</h4>
+                                        <div class="px-4"><span class="peity-line" data-width="100%">6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <h4 class="card-title mb-4">Line Chart</h4>
+                                        <div class="px-4"><span class="peity-line" data-width="100%">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 1</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#F44336", "rgba(244, 67, 54, .1)"]}'>5/8</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 2</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#34C73B", "rgba(52, 199, 59, .1)"]}'>250/650</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 3</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#00A2FF", "rgba(0, 162, 255, .1)"]}'>0.52/1.561</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 4</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#28D6C3 ", "rgba(40, 214, 195, .1)"]}'>1,4</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 5</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#0000FF", "rgba(0, 0, 255, .1)"]}'>226,134</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Pie 6</h4>
+                                        <div class=""><span class="pie" data-peity='{ "fill": ["#DCDCDC", "rgba(220, 220, 220, .1)"]}'>0.52,1.041</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 1</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(117, 180, 50)", "rgba(117, 180, 50, .5)"]}'>5/8</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 2</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(7, 135, 234)", "rgba(7, 135, 234, .5)"]}'>250/650</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 3</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(0, 171, 197)", "rgba(0, 171, 197, .5)"]}'>0.52/1.561</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 4</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(7, 135, 234)", "rgba(7, 135, 234, .5)"]}'>1,4</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 5</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgba(0, 0, 128, .5)"]}'>226,134</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-4 col-6 mt-4 mt-md-0">
+                                        <h4 class="card-title mb-4">Donut 6</h4>
+                                        <div class=""><span class="donut" data-peity='{ "fill": ["rgb(117, 180, 50)", "rgba(117, 180, 50, .5)"]}'>0.52,1.041</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="card-title mb-4">Live Update</h4>
+                                        <div class=""><span class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+        
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+    
+
+
+
+    <!-- Chart ChartJS plugin files -->
+    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <!-- Chart Morris plugin files -->
+    <script src="./vendor/raphael/raphael.min.js"></script>
+    <script src="./vendor/morris/morris.min.js"></script>
+    <!-- Chart Chartist plugin files -->
+    <script src="./vendor/chartist/js/chartist.min.js"></script>
+    <script src="./vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+    <!-- Chart piety plugin files -->
+    <script src="./vendor/peity/jquery.peity.min.js"></script>
+    <!-- Chart sparkline plugin files -->
+    <script src="./vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Easy pie chart plugin files -->
+    <script src="./vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
+
+    <!-- Chart flot plugin files -->
+    <script src="./vendor/flot/jquery.flot.js"></script>
+    <script src="./vendor/flot/jquery.flot.pie.js"></script>
+    <script src="./vendor/flot/jquery.flot.resize.js"></script>
+    <script src="./vendor/flot-spline/jquery.flot.spline.min.js"></script>
+
+    <script src="./vendor/amcharts/amcharts.js"></script>
+    <script src="./vendor/amcharts/serial.js"></script>
+    <script src="./vendor/amcharts/plugins/dataloader.min.js"></script>
+    <script src="./vendor/amcharts/plugins/export.min.js"></script>
+    <script src="./vendor/amcharts/ammap.js"></script>
+    <script src="./vendor/amcharts/worldLow.js"></script>
+    <script src="./vendor/amcharts/pie.js"></script>
+    <script src="./vendor/amcharts/amstock.js"></script>
+
+
+    <script src="./js/plugins-init/amchart-init.js"></script>
+    <script src="./js/plugins-init/chartjs-init.js"></script>
+    <script src="./js/plugins-init/chartist-init.js"></script>
+    <script src="./js/plugins-init/morris-init.js"></script>
+    <script src="./js/plugins-init/sparkline-init.js"></script>
+    <script src="./js/plugins-init/easy-pie-chart-init.js"></script>
+    <script src="./js/plugins-init/flot-init.js"></script>
+    <script src="./js/plugins-init/piety-init.js"></script>
+
+</body>
+
+</html>

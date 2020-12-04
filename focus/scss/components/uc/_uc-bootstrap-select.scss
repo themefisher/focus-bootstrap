@@ -1,0 +1,63 @@
+// .selectpicker{
+//     background: transparent;
+//     color: $dark;
+// }
+
+.bootstrap-select{
+    margin-bottom: 1rem;
+
+    .btn-light {
+        background  : $dark;
+        border-color: $dark;
+        color       : $white!important;
+        
+        
+        &:active,
+        &:focus,
+        &:hover {
+            background  : darken($dark, 10%);
+            color       : $white;
+            border-color: darken($dark, 10%);
+            outline: none !important;
+
+            @at-root [data-theme-version="dark"] & {
+                background: $d-bg;
+            }
+        }
+    }
+
+    .btn-light:not(:disabled):not(.disabled):active, 
+    .btn-light:not(:disabled):not(.disabled).active, 
+    .show > .btn-light.dropdown-toggle {
+
+        @at-root [data-theme-version="dark"] & {
+            background: $d-bg;
+        }
+        
+    }
+
+    &.show{
+
+        .btn{
+            background: transparent;
+            border-color: #DDDFE1;
+            color: $dark;
+        }
+    }
+
+    .text-muted{
+        background: transparent;
+        border-color: #DDDFE1;
+
+        &.dropdown-toggle::after{
+            color: $dark;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+
+
+

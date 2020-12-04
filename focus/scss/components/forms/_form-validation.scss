@@ -1,0 +1,49 @@
+/////////////////////////////
+// Bootstrap validation
+/////////////////////////////
+.form-control.is-valid {
+    border-color: $success !important;
+    border-right: 0px !important;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-control.is-warning {
+    border-color: $warning !important;
+    border-right: 0px !important;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-control.is-invalid {
+    border-color: $danger !important;
+    border-right: 0px !important;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+////////////////////////
+// Jquery Validation 
+////////////////////////
+.is-valid {
+    .input-group-prepend {
+        .input-group-text {
+            i {
+                color: $success;
+            }
+        }
+    }
+}
+
+.is-invalid {
+    .input-group-prepend {
+        .input-group-text {
+            i {
+                color: lighten($primary, 15%)
+            }
+        }
+    }
+}

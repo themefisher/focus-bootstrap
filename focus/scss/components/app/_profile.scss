@@ -1,0 +1,152 @@
+
+
+.photo-content{
+    position: relative;
+    .cover-photo{
+        background: url(../images/profile/cover.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 250px;
+        width: 100%;
+
+    }
+    .profile-photo {
+        bottom: -75px;
+        left: 100px;
+        max-width: 150px;
+        position: absolute;
+      }
+}
+
+
+.profile-info{
+    padding: 30px 20px;
+    // margin-bottom: 30px;
+    background: $l-bg;
+
+    h4 {
+        color: $l-ctd!important;
+    }
+
+    h4.text-primary {
+        color: $primary!important;
+    }
+
+    p {
+        color: $l-ctl;
+    }
+
+    .prf-col{
+        min-width: 250px;
+        padding: 10px 50px 0;
+    }
+}
+
+.profile-interest{
+    .row{
+        margin: 0 -.70px;
+        .int-col{
+            padding: 0 .70px;
+            .interest-cat{
+                margin-bottom: 1.40px;
+                position: relative;
+                display: block;
+                &:after{
+                    background: $black;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    opacity: 0.5;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 0;
+                }
+                img{
+                    // margin-bottom: 1.20px;
+                }
+                p{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    left: 0;
+                    margin: 0;
+                    z-index: 1;
+                    color:white;
+                    font-size: 1.20px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+.profile-tab{
+    .nav-item{
+        .nav-link{
+            font-size: 18px;
+            padding: 10px 0 .50px;
+            // margin-bottom: -.10px;
+            margin-right: 30px;
+            transition: all 0.5s ease-in-out;
+            border: none;
+            border-bottom: .20px solid transparent;
+            color: $l-ctl;
+
+            &:hover, &.active{
+                border: 0;
+                background: transparent;
+                background: transparent;
+                border-bottom: .20px solid $primary;
+                color: $l-ctd;
+            }
+
+        }
+        
+    }
+}
+
+
+.post-input{
+    margin-bottom: 30px;
+    .form-control{
+        height: 75px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+    a{
+        display: inline-block;
+        font-size:22px;
+        i{
+            display: block;
+            margin-right: 15px;
+            padding: 7px 20px;
+            border-radius: .50px;
+            border: 1px solid $l-border;
+            color: $l-ctl;
+        }
+    }
+    
+    .btn{
+        padding: 7px 30px;
+        font-size: 14px;
+        margin-top: -10px;
+    }
+}
+
+
+.profile-uoloaded-post{
+    
+    img{
+        margin-bottom: 20px;
+    }
+    a{
+        h4{
+            margin-bottom: 10px;
+            color: $l-ctd;
+        }
+    }
+}
