@@ -1,0 +1,61 @@
+/*
+===================================
+    list view
+===================================*/
+
+.new-arrival-content {
+    .item {
+        font-size: 12px;
+        color: $dark;
+    }
+    h4 {
+        font-size: 16px;
+        color: $d-ctl;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-weight: 700;
+        color: $primary;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+        color: $d-ctl;
+        margin-bottom: 6px;
+        line-height: 24px;
+    }
+    .text-content {
+        margin-top: 18px;
+    }
+}
+
+.success-icon {
+    color: $success;
+    font-size: 16px;
+}
+
+.comment-review {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    .client-review {
+        color: $d-ctl;
+        padding-right: 20px;
+        text-decoration: underline !important;
+        font-size: 14px;
+    }
+    .span {
+        color: $d-ctl;
+        font-size: 14px;
+    }
+}
+
+.star-rating li {
+    display: inline-block;
+    i {
+        color: gold;
+    }
+}

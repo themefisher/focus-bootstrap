@@ -4,519 +4,592 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./css/style.css" rel="stylesheet">
 
-    <title>Focus Admin: Blank</title>
-
-    <!-- ================= Favicon ================== -->
-    <!-- Standard -->
-    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
-    <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
-    <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
-    <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
-    <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
-
-    <!-- Styles -->
-    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
-    <link href="css/lib/themify-icons.css" rel="stylesheet">
-    <link href="css/lib/menubar/sidebar.css" rel="stylesheet">
-    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
-    <link href="css/lib/helper.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
-            <div class="nano">
-                <div class="nano-content">
-                    <div class="logo"><a href="index.html"><!-- <img src="images/logo.png" alt="" /> --><span>Focus</span></a></div>
-                    <ul>
-                        <li class="label">Main</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index.html">Dashboard 2</a></li>
-                                
-                                
-                                
-                            </ul>
-                        </li>
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
 
-                        <li class="label">Apps</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  Charts  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="chart-flot.html">Flot</a></li>
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chartjs.html">Chartjs</a></li>
-                                <li><a href="chartist.html">Chartist</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
-                                <li><a href="chart-sparkline.html">Sparkle</a></li>
-                                <li><a href="chart-knob.html">Knob</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="app-event-calender.html"><i class="ti-calendar"></i> Calender </a></li>
-                        <li><a href="app-email.html"><i class="ti-email"></i> Email</a></li>
-                        <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
-                        <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> Widget</a></li>
-                        <li class="label">Features</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-layout"></i> UI Elements <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="ui-typography.html">Typography</a></li>
-                                <li><a href="ui-alerts.html">Alerts</a></li>
-                                
-                                <li><a href="ui-button.html">Button</a></li>
-                                <li><a href="ui-dropdown.html">Dropdown</a></li>
-                               
-                                <li><a href="ui-list-group.html">List Group</a></li>
-                                
-                                <li><a href="ui-progressbar.html">Progressbar</a></li>
-                                <li><a href="ui-tab.html">Tab</a></li>
-                                
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-panel"></i> Components <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="uc-calendar.html">Calendar</a></li>
-                                <li><a href="uc-carousel.html">Carousel</a></li>
-                                <li><a href="uc-weather.html">Weather</a></li>
-                                <li><a href="uc-datamap.html">Datamap</a></li>
-                                <li><a href="uc-todo-list.html">To do</a></li>
-                                <li><a href="uc-scrollable.html">Scrollable</a></li>
-                                <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-                                <li><a href="uc-toastr.html">Toastr</a></li>
-                                <li><a href="uc-range-slider-basic.html">Basic Range Slider</a></li>
-                                <li><a href="uc-range-slider-advance.html">Advance Range Slider</a></li>
-                                <li><a href="uc-nestable.html">Nestable</a></li>
-                                
-                                <li><a href="uc-rating-bar-rating.html">Bar Rating</a></li>
-                                <li><a href="uc-rating-jRate.html">jRate</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i> Table <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="table-basic.html">Basic</a></li>
-                               
-                                <li><a href="table-export.html">Datatable Export</a></li>
-                                <li><a href="table-row-select.html">Datatable Row Select</a></li>
-                                <li><a href="table-jsgrid.html">Editable </a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-heart"></i> Icons <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="font-themify.html">Themify</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-map"></i> Maps <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="gmaps.html">Basic</a></li>
-                                <li><a href="vector-map.html">Vector Map</a></li>
-                            </ul>
-                        </li>
-                        <li class="label">Form</li>
-                        <li><a href="form-basic.html"><i class="ti-view-list-alt"></i> Basic Form </a></li>
-                        <li class="label">Extra</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-files"></i> Invoice <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="invoice.html">Basic</a></li>
-                                <li><a href="invoice-editable.html">Editable</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Pages <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="page-login.html">Login</a></li>
-                                <li><a href="page-register.html">Register</a></li>
-                                <li><a href="page-reset-password.html">Forgot password</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../documentation/index.html"><i class="ti-file"></i> Documentation</a></li>
-                        <li><a><i class="ti-close"></i> Logout</a></li>
-                    </ul>
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
                 </div>
             </div>
         </div>
-        <!-- /# sidebar -->
+        <!--**********************************
+            Nav header end
+        ***********************************-->
 
-
-    <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="float-left">
-                        <div class="hamburger sidebar-toggle">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="float-right">
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
-                                <div class="drop-down dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">Recent Notifications</span>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">5 members joined today </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mariam</div>
-                                                        <div class="notification-text">likes a photo of you</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Tasnim</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="text-center">
-                                                <a href="#" class="more-link">See All</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-email"></i>
-                                <div class="drop-down dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">2 New Messages</span>
-                                        <a href="email.html">
-                                            <i class="ti-pencil-alt pull-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li class="notification-unread">
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/1.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Michael Qin</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="notification-unread">
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/2.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Michael Qin</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="images/avatar/2.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="text-center">
-                                                <a href="#" class="more-link">See All</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <span class="user-avatar">John
-                                    <i class="ti-angle-down f-s-10"></i>
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
                                 </span>
-                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">Upgrade Now</span>
-                                        <p class="trial-day">30 Days Trail</p>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-user"></i>
-                                                    <span>Profile</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-email"></i>
-                                                    <span>Inbox</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-settings"></i>
-                                                    <span>Setting</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-lock"></i>
-                                                    <span>Lock Screen</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-power-off"></i>
-                                                    <span>Logout</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
                                 </div>
                             </div>
                         </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
 
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    </li> -->
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Dashboard 1</a></li>
+                            <li><a href="./index2.html">Dashboard 2</a></li></ul>
+                    </li>
+                    
+                    <li class="nav-label">Apps</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-app-store"></i><span class="nav-text">Apps</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./app-profile.html">Profile</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./email-compose.html">Compose</a></li>
+                                    <li><a href="./email-inbox.html">Inbox</a></li>
+                                    <li><a href="./email-read.html">Read</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./app-calender.html">Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-chart-bar-33"></i><span class="nav-text">Charts</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./chart-flot.html">Flot</a></li>
+                            <li><a href="./chart-morris.html">Morris</a></li>
+                            <li><a href="./chart-chartjs.html">Chartjs</a></li>
+                            <li><a href="./chart-chartist.html">Chartist</a></li>
+                            <li><a href="./chart-sparkline.html">Sparkline</a></li>
+                            <li><a href="./chart-peity.html">Peity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Components</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-world-2"></i><span class="nav-text">Bootstrap</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ui-accordion.html">Accordion</a></li>
+                            <li><a href="./ui-alert.html">Alert</a></li>
+                            <li><a href="./ui-badge.html">Badge</a></li>
+                            <li><a href="./ui-button.html">Button</a></li>
+                            <li><a href="./ui-modal.html">Modal</a></li>
+                            <li><a href="./ui-button-group.html">Button Group</a></li>
+                            <li><a href="./ui-list-group.html">List Group</a></li>
+                            <li><a href="./ui-media-object.html">Media Object</a></li>
+                            <li><a href="./ui-card.html">Cards</a></li>
+                            <li><a href="./ui-carousel.html">Carousel</a></li>
+                            <li><a href="./ui-dropdown.html">Dropdown</a></li>
+                            <li><a href="./ui-popover.html">Popover</a></li>
+                            <li><a href="./ui-progressbar.html">Progressbar</a></li>
+                            <li><a href="./ui-tab.html">Tab</a></li>
+                            <li><a href="./ui-typography.html">Typography</a></li>
+                            <li><a href="./ui-pagination.html">Pagination</a></li>
+                            <li><a href="./ui-grid.html">Grid</a></li>
 
+                        </ul>
+                    </li>
 
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-plug"></i><span class="nav-text">Plugins</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./uc-select2.html">Select 2</a></li>
+                            <li><a href="./uc-nestable.html">Nestedable</a></li>
+                            <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
+                            <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
+                            <li><a href="./uc-toastr.html">Toastr</a></li>
+                            <li><a href="./map-jqvmap.html">Jqv Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="widget-basic.html" aria-expanded="false"><i class="icon icon-globe-2"></i><span
+                                class="nav-text">Widget</span></a></li>
+                    <li class="nav-label">Forms</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-form"></i><span class="nav-text">Forms</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./form-element.html">Form Elements</a></li>
+                            <li><a href="./form-wizard.html">Wizard</a></li>
+                            <li><a href="./form-editor-summernote.html">Summernote</a></li>
+                            <li><a href="form-pickers.html">Pickers</a></li>
+                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Table</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-layout-25"></i><span class="nav-text">Table</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
+                            <li><a href="table-datatable-basic.html">Datatable</a></li>
+                        </ul>
+                    </li>
 
-    <div class="content-wrap">
-        <div class="main">
+                    <li class="nav-label">Extra</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-copy-06"></i><span class="nav-text">Pages</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-register.html">Register</a></li>
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./page-error-400.html">Error 400</a></li>
+                                    <li><a href="./page-error-403.html">Error 403</a></li>
+                                    <li><a href="./page-error-404.html">Error 404</a></li>
+                                    <li><a href="./page-error-500.html">Error 500</a></li>
+                                    <li><a href="./page-error-503.html">Error 503</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 p-r-0 title-margin-right">
-                        <div class="page-header">
-                            <div class="page-title">
-                                <h1>Hello, <span>Welcome Here</span></h1>
-                            </div>
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <span class="ml-1">List Group</span>
                         </div>
                     </div>
-                    <!-- /# column -->
-                    <div class="col-lg-4 p-l-0 title-margin-left">
-                        <div class="page-header">
-                            <div class="page-title">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                    <li class="breadcrumb-item active">UI-List-Group</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Bootstrap</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">List Group</a></li>
+                        </ol>
                     </div>
-                    <!-- /# column -->
                 </div>
-                <!-- /# row -->
-                <section id="main-content">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>List Groups</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">To create a basic list group, use an <code>&lt;ul&gt;</code> element with class <code>.list-group</code>, and<code>&lt;li&gt;</code> elements with class <code>.list-group-item</code>:</p>
+                <!-- row -->
 
-                                    <ul class="list-group">
-                                        <li class="list-group-item">First item</li>
-                                        <li class="list-group-item">Second item</li>
-                                        <li class="list-group-item">Third item</li>
-                                    </ul>
-                                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Basic List Group</h4>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>List Group With Badges</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">To create a badge, create a <code>&lt;span&gt;</code> element with class <code>.badge</code> inside the list item:</p>
-
+                            <div class="card-body">
+                                <div class="basic-list-group">
                                     <ul class="list-group">
-                                        <li class="list-group-item">New <span class="badge">12</span></li>
-                                        <li class="list-group-item">Deleted <span class="badge">5</span></li>
-                                        <li class="list-group-item">Warnings <span class="badge">3</span></li>
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>List Group With Linked Items</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">To create a list group with linked items, use <code>&lt;div&gt;</code> instead of <code>&lt;ul&gt;</code> and <code>&lt;a&gt;</code> instead of <code>&lt;li&gt;</code>:</p>
-
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item">First item</a>
-                                        <a href="#" class="list-group-item">Second item</a>
-                                        <a href="#" class="list-group-item">Third item</a>
-                                    </div>
-                                </div>
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">List Active items</h4>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>Active State</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">Use the <code>.active</code> class to highlight the current item:</p>
-
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item active">First item</a>
-                                        <a href="#" class="list-group-item">Second item</a>
-                                        <a href="#" class="list-group-item">Third item</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>Disabled Item</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">To disable an item, add the <code>.disabled</code> class:</p>
-
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item disabled">First item</a>
-                                        <a href="#" class="list-group-item">Second item</a>
-                                        <a href="#" class="list-group-item">Third item</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>Contextual Classes</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">The classes for coloring list-items are: <code>.list-group-item-success</code>, <code>list-group-item-info</code>, <code>list-group-item-warning</code>, and <code>.list-group-item-danger</code>:</p>
-
+                            <div class="card-body">
+                                <div class="basic-list-group">
                                     <ul class="list-group">
-                                        <li class="list-group-item list-group-item-success">First item</li>
-                                        <li class="list-group-item list-group-item-info">Second item</li>
-                                        <li class="list-group-item list-group-item-warning">Third item</li>
-                                        <li class="list-group-item list-group-item-danger">Fourth item</li>
+                                        <li class="list-group-item active">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>Custom Content</h4>
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">List Disabled items</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <ul class="list-group">
+                                        <li class="list-group-item disabled">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
                                 </div>
-                                <div class="card-body">
-                                    <p class="text-muted m-b-15">Bootstrap provides the classes <code>.list-group-item-heading</code> and
-                                        <code>.list-group-item-text</code> which can be used as follows:</p>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Links and buttons items</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <div class="list-group"><a href="javascript:void()" class="list-group-item list-group-item-action active">Cras
+                                            justo odio </a><a href="javascript:void()" class="list-group-item list-group-item-action">Dapibus
+                                            ac facilisis in</a> <a href="javascript:void()" class="list-group-item list-group-item-action">Morbi
+                                            leo risus</a>
+                                        <a href="javascript:void()" class="list-group-item list-group-item-action">Porta
+                                            ac consectetur
+                                            ac</a> <a href="javascript:void()" class="list-group-item list-group-item-action disabled">Vestibulum
+                                            at eros</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Flush</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">With badges</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio <span class="badge badge-primary badge-pill">14</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in <span class="badge badge-primary badge-pill">2</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio <span class="badge badge-primary badge-pill">14</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Custom content</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
                                     <div class="list-group">
-                                        <a href="#" class="list-group-item">
-                                            <h5 class="list-group-item-heading">First List Group Item Heading</h5>
-                                            <p class="list-group-item-text">List Group Item Text</p>
+                                        <a href="javascript:void()" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3 text-white">List group item heading</h5><small>3 days
+                                                    ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi
+                                                porta.</small>
                                         </a>
-                                        <a href="#" class="list-group-item">
-                                            <h5 class="list-group-item-heading">Second List Group Item Heading</h5>
-                                            <p class="list-group-item-text">List Group Item Text</p>
+                                        <a href="javascript:void()" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3">List group item heading</h5><small class="text-muted">3
+                                                    days ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec
+                                                id elit non mi porta.</small>
                                         </a>
-                                        <a href="#" class="list-group-item">
-                                            <h5 class="list-group-item-heading">Third List Group Item Heading</h5>
-                                            <p class="list-group-item-text">List Group Item Text</p>
+                                        <a href="javascript:void()" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3">List group item heading</h5><small class="text-muted">3
+                                                    days ago</small>
+                                            </div>
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec
+                                                id elit non mi porta.</small>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="footer">
-                                <p>2018 © Admin Board. - <a href="#">example.com</a></p>
+                    <div class="col-xl-6 col-xxl-6 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Contextual</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+                                        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+                                        <li class="list-group-item list-group-item-success">This is a success list group item</li>
+                                        <li class="list-group-item list-group-item-danger">This is a danger list group item
+                                        </li>
+                                        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                                        <li class="list-group-item list-group-item-info">This is a info list group item
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">This is a light list group item
+                                        </li>
+                                        <li class="list-group-item list-group-item-dark">This is a dark list group item
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">List Tab</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-2">
+                                            <div class="list-group mb-4 " id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab">Home</a> <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                                    data-toggle="list" href="#list-profile" role="tab">Profile</a> <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab">Messages</a>
+                                                <a
+                                                    class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab">Settings</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-10">
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="list-home">
+                                                    <h4 class="mb-4">Home Tab Content</h4>
+                                                    <p>Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit
+                                                        occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in
+                                                        cupidatat nisi enim eu nostrud do aliquip veniam minim.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="list-profile" role="tabpanel">
+                                                    <h4 class="mb-4">Profile Tab Content</h4>
+                                                    <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim
+                                                        incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa
+                                                        commodo veniam incididunt veniam ad.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="list-messages">
+                                                    <h4 class="mb-4">Message Tab Content</h4>
+                                                    <p>Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat
+                                                        enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt.
+                                                        Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="list-settings">
+                                                    <h4 class="mb-4">Settings Tab Content</h4>
+                                                    <p>Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute
+                                                        est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna
+                                                        labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+        
     </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
 
-
-
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
     
-    <!-- jquery vendor -->
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/jquery.nanoscroller.min.js"></script>
-    <!-- nano scroller -->
-    <script src="js/lib/menubar/sidebar.js"></script>
-    <script src="js/lib/preloader/pace.min.js"></script>
-    <!-- sidebar -->
-    
-    <!-- bootstrap -->
 
 
-    <script src="js/lib/bootstrap.min.js"></script><script src="js/scripts.js"></script>
-    <!-- scripit init-->
+
 </body>
 
 </html>

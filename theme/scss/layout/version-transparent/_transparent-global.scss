@@ -1,0 +1,24 @@
+
+[data-theme-version="transparent"] {
+    .dropdown-menu {
+        background-color: $dark-card;
+    }
+
+    .dropdown-item {
+        &:hover, &:focus {
+            background-color: $d-bg;
+            color: $white;
+        }
+    }
+
+    .form-control {
+        background-color: $d-bg;
+        border-color: $d-border;
+        color: $white;
+    }
+    
+    .card {
+        background-color: rgba(0,0,0,0.15);
+    }
+
+}

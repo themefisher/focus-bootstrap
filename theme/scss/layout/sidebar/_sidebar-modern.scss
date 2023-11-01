@@ -1,0 +1,199 @@
+@media (min-width:767px) {
+    [data-sidebar-style="modern"] {
+
+        .nav-header {
+            width: 9.375rem;
+        }
+
+        .quixnav {
+        
+            .metismenu {
+                &>li {
+                    text-align: center;
+                    border-bottom: 1px solid $border;
+
+                    &>a {
+                        padding: 20px 15px 20px 15px!important;
+                        // font-weight: 500;
+
+                        &::after {
+                            display: none;
+                        }
+
+                        &:hover, 
+                        &:focus, 
+                        &:active, 
+                        &.mm-active {
+                            &>a {
+                                background-color: lighten($color: $primary, $amount: 50%);
+                            }
+                        }
+                    }
+
+                    li {
+                        text-align: left;
+
+                        @at-root [direction="rtl"]#{&} {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                li {
+
+                    a {
+                        padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+                    }
+
+                    &>ul {
+                        height: auto !important;
+                    }
+                }
+                .nav-label{
+                    display: none;
+                }
+            }
+
+            .nav-label {
+                display: none;
+            }
+            
+
+            .nav-text {
+                display: block;
+                margin-top: 0.3125rem;
+            }
+        }
+
+        .footer {
+            padding-left: 9.375rem;
+        }
+        .content-body {
+            margin-left: 9.375rem;
+        }
+    }
+
+    [data-sidebar-style="modern"][data-layout="vertical"] {
+
+        .quixnav {
+            width: 9.375rem;
+            left: 0;
+
+            .slimScrollDiv, 
+            .quixnav-scroll {
+                overflow: visible !important;
+            }
+        
+            .metismenu {
+                &>li {
+                    &>a{
+                        i{
+                            font-size: 20px;
+                            // height: 35px;
+                        }
+                    }
+
+                    &>ul {
+                        display: none;
+                        padding: 1.875rem 0.9375rem;
+                    }
+                }
+
+                li {
+                    position: static;
+
+                    a {
+                        padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+                    }
+
+                    ul {
+                        position: absolute;
+                        left: 105%;
+                        top: 0;
+                        bottom: 0;
+                        background-color: $white;
+                        border: 1px solid $border;
+                        width: 200px;
+                        // box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
+
+                        @at-root [direction="rtl"]#{&} {
+                            left: auto;
+                            right: 105%;
+                        }
+                    }
+
+                    &:hover {
+                        &>ul {
+                            display: block;
+                            left: 100%;
+                            padding: 1.875rem 0;
+
+                            @at-root [direction="rtl"]#{&} {
+                                left: auto;
+                                right: 100%;
+                            }  
+                        }
+                    }
+                }
+            }
+            
+
+            .nav-label {
+                display: none;
+            }
+
+            .nav-text {
+                display: block;
+                margin-top: 0;
+                margin-bottom: 0.3125rem;
+            }
+        }
+
+
+        .menu-toggle {
+            .quixnav {
+                left: -9.375rem;
+
+                @at-root [direction="rtl"]#{&} {
+                    left: auto;
+                    right: -9.375rem;
+                }
+            }
+
+            .content-body {
+                margin-left: 0;
+            }
+        }
+    }
+
+    [data-sidebar-style="modern"][data-layout="horizontal"] {
+
+        .quixnav {
+            .metismenu {
+
+                &>li {
+                    &>a {
+                        padding: 0.8125rem 2.25rem;
+                    }
+
+                    &>ul {
+                        top: 4.5625rem;
+                    }
+                }
+            }
+        }
+
+        &[data-container="boxed"] {
+            .quixnav {
+                .metismenu {
+    
+                    &>li {
+                        &>a {
+                            padding: 0.8125rem 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

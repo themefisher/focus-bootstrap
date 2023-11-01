@@ -1,0 +1,105 @@
+.header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    input {
+        background: $white!important;
+        min-width: 300px;
+        min-height: 44px;
+        border-color: transparent;
+        color: $dark!important;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        box-shadow: none;
+        @include respond('desktop') {
+            // margin-top: 3px;
+        }
+        @at-root [direction="rtl"] & {
+            // border-top-left-radius: 0;
+            // border-bottom-left-radius: 0;
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+        &:focus,
+        &:active,
+        &.active {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        &::-webkit-input-placeholder {
+            /* Edge */
+            color: $dark;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer */
+            color: $dark;
+        }
+        &::placeholder {
+            color: $dark;
+        }
+    }
+    // .btn {
+    //     border-top-left-radius: 0;
+    //     border-bottom-left-radius: 0;
+    //     height: 45px;
+    //     @at-root [direction="rtl"] & {
+    //         border-top-right-radius: 0;
+    //         border-bottom-right-radius: 0; 
+    //         border-top-left-radius: .25rem;
+    //         border-bottom-left-radius: .25rem;
+    //     }
+    // }
+    .search_bar {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .dropdown-menu {
+            box-shadow: none;
+            ;
+        }
+        .search_icon {
+            background: $white!important;
+            height: 44px;
+            padding: 5px 15px!important;
+            border-top-left-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            i {
+                font-size: 24px;
+                color: $dark;
+            }
+        }
+        @include custommq($max: 575px) {
+            position: static;
+            .dropdown-menu {
+                width: 100vw;
+                left: -98px;
+                @at-root [direction="rtl"] & {
+                    right: -98px;
+                }
+            }
+        }
+        // .form-inline {
+        //     flex-flow: row nowrap;
+        // }
+        .dropdown-menu,
+        .dropdown-menu.show {
+            // box-shadow: 0px 0px 10px rgba(120, 130, 140, 0.13);
+            border: 0px;
+            background-color: transparent;
+            border-top-right-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            @include custommq($min: 768px) {
+                left: 40px;
+                top: -4px;
+                transform: translateY(50%);
+                display: block;
+            }
+        }
+    }
+}
+
+[data-sidebar-style="compact"] {
+    .header-left {
+        margin-left: 0;
+    }
+}

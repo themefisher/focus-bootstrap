@@ -1,0 +1,56 @@
+@import "./../../abstracts/variable";
+
+
+
+[data-theme-version="transparent"] {
+
+    
+    background: url('../images/body/12.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    // background: $d-bg;s
+    color: $white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white !important;
+    }
+    a.link {
+        color: $d-ctd;
+    }
+    a.link:focus,
+    a.link:hover {
+        color: $info;
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $d-ctl;
+        }
+    }
+
+    
+    //Generating border classess
+    @each $value in $borders {
+        @if $value == "" {
+            .border {
+                border: 1px solid $d-border !important;
+            }
+        } @else {
+            .border-#{$value} {
+                border-#{$value}: 1px solid $d-border !important;
+            }
+        }
+    }
+
+
+}

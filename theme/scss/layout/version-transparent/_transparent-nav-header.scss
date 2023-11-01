@@ -1,0 +1,18 @@
+[data-theme-version="transparent"] {
+    .nav-header, 
+    .nav-control {
+        background-color: rgba(0,0,0,0.15)!important;
+    }
+
+    .nav-control {
+        color: $white;
+    }
+
+    .brand-logo {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}

@@ -1,74 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="./css/style.css" rel="stylesheet">
 
-    <title>Focus Admin: Widget</title>
-
-    <!-- ================= Favicon ================== -->
-    <!-- Standard -->
-    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
-    <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
-    <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
-    <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
-    <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
-
-    <!-- Styles -->
-    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
-    <link href="css/lib/themify-icons.css" rel="stylesheet">
-    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
-    <link href="css/lib/helper.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-primary">
-
-    <div class="unix-login">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="login-content">
-                        <div class="login-logo">
-                            <a href="index.html"><span>Focus</span></a>
-                        </div>
-                        <div class="login-form">
-                            <h4>Register to Administration</h4>
-                            <form>
-                                <div class="form-group">
-                                    <label>User Name</label>
-                                    <input type="email" class="form-control" placeholder="User Name">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email address</label>
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-										<input type="checkbox"> Agree the terms and policy 
-									</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
-                                <div class="social-login-content">
-                                    <div class="social-button">
-                                        <button type="button" class="btn btn-primary bg-facebook btn-flat btn-addon m-b-10"><i class="ti-facebook"></i>Register with facebook</button>
-                                        <button type="button" class="btn btn-primary bg-twitter btn-flat btn-addon m-t-10"><i class="ti-twitter"></i>Register with twitter</button>
+<body class="h-100">
+    <div class="authincation h-100">
+        <div class="container-fluid h-100">
+            <div class="row justify-content-center h-100 align-items-center">
+                <div class="col-md-6">
+                    <div class="authincation-content">
+                        <div class="row no-gutters">
+                            <div class="col-xl-12">
+                                <div class="auth-form">
+                                    <h4 class="text-center mb-4">Sign up your account</h4>
+                                    <form action="index.html">
+                                        <div class="form-group">
+                                            <label><strong>Username</strong></label>
+                                            <input type="text" class="form-control" placeholder="username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><strong>Email</strong></label>
+                                            <input type="email" class="form-control" placeholder="hello@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><strong>Password</strong></label>
+                                            <input type="password" class="form-control" value="Password">
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn btn-primary btn-block">Sign me up</button>
+                                        </div>
+                                    </form>
+                                    <div class="new-account mt-3">
+                                        <p>Already have an account? <a class="text-primary" href="page-login.html">Sign in</a></p>
                                     </div>
                                 </div>
-                                <div class="register-link m-t-15 text-center">
-                                    <p>Already have account ? <a href="#"> Sign in</a></p>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,6 +51,13 @@
         </div>
     </div>
 
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <!--endRemoveIf(production)-->
 </body>
 
 </html>

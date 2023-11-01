@@ -1,0 +1,27 @@
+.pignose-calendar {
+    box-shadow: none;
+    width: 100%;
+    max-width: none;
+    border-color: $primary;
+    .pignose-calendar-top-date {
+        background-color: $white;
+        .pignose-calendar-top-month {
+            color: $white;
+        }
+    }
+}
+
+.pignose-calendar.pignose-calendar-blue .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-active a {
+    background-color: $primary;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.pignose-calendar .pignose-calendar-top {
+    box-shadow: none;
+    border-bottom: 0;
+}
+
+.pignose-calendar.pignose-calendar-blue {
+    background-color: transparent;
+}

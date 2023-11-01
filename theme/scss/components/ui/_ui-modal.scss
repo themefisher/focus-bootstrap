@@ -1,0 +1,86 @@
+// .modal{
+//     border: 0;
+//     z-index: 9999999999;
+    
+//     &-content{
+//         border: 0;
+//         box-shadow: 0px 2px 21px 6px rgba(70, 66, 66, 0.26);
+//     }
+// }
+
+// // primary modal rule
+// #primaryModal{
+
+//     .modal-header{
+//         background: $primary;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+// //danger modal rule
+// #dangerModal{
+
+//     .modal-header{
+//         background: $danger;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// //warning modal rule
+// #warningModal{
+
+//     .modal-header{
+//         background: $warning;
+
+//         .modal-title,button{
+//             color: #a39e06 ;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// //success modal rule
+// #successModal{
+
+//     .modal-header{
+//         background: $success;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+// .bootstrap-modal-wrapper{
+
+//     button:not(:last-child){
+//         margin-right: 7px;
+//     }
+
+//     button{
+//         margin-bottom: .5rem;
+
+//         &:focus{
+//             box-shadow: none;
+//         }
+//     }
+// }
+
+
+.modal-backdrop{
+    z-index: 10!important;
+}

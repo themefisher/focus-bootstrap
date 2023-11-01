@@ -1,0 +1,358 @@
+@import "../../abstracts/variable";
+@import "../../abstracts/mixin";
+
+
+.wizard > .content > .body input.error {
+    position: absolute;
+    top: 100% !important;
+}
+
+.wizard {
+    position: relative;
+
+    &>.steps {
+        width: 100%;
+        // padding-left: 3%;
+
+        @media(min-width: 1200px){
+            width: 100%;
+            // margin-left: 3%;
+        }
+
+        li {
+
+            &.current {
+                a {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+
+            &.disabled, &.done {
+                a {
+                    background-color: $white;
+                    color: $heading;
+
+                    &:hover {
+                        margin: 0;
+                        background-color: $white;
+                        border-radius: 0;
+                        color: $heading;
+                    }
+                }
+            }
+
+            a {
+                text-align: center;
+                margin: 0;
+                border-radius: 0;
+                background-color: $white;
+
+                &:hover {
+                    margin: 0;
+                    background-color: $white;
+                    border-radius: 0;
+                    color: $heading;
+                }
+
+                @include respond(phone-land) {
+                    padding: 1em 4px;
+                }
+
+                .number {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .content  {
+        min-height: 35rem;
+        margin: 0;
+
+        @include media-breakpoint-down(md) {
+            min-height: 41rem;
+        }
+
+        & > .body {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            
+            @include respond(phone) {
+                padding: 0;
+            }
+
+            .form-control {
+                // background-color: $l-bg;
+                border: 1px solid $border;
+            }
+    
+            input.error {
+                position: relative;
+            }
+    
+            label.error {
+                position: absolute;
+                top: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .emial-setup {
+        label.mailclinet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #EEF5F9;
+
+            @include respond(phone) {
+                width: 7rem;
+                height: 7rem;
+            }
+
+            .mail-icon {
+                font-size: 3rem;
+                display: inline-block;
+                line-height: 1;
+                margin-top: -1rem;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                }
+            }
+
+            .mail-text {
+                font-size: 1rem;
+                text-align: center;
+                margin-top: .5rem;
+
+                @include respond(phone) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+        }
+    }
+
+    .skip-email {
+        margin-top: 6rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+
+    &>.actions {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+
+        li:not(.disabled) {
+            a {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.wizard .actions ul li{
+    &.disabled a{
+        color: #333333 !important;
+        background: #F7FAFC !important;
+        border: 1px solid #EEEEEE;
+
+        @at-root [data-theme-version="dark"] & {
+            background: $d-bg !important;
+            border-color: $d-border;
+        }
+    }
+
+    & a{
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0.55em 2em;
+    }
+
+}
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active{
+    padding: 0.55em 2em;
+}
+
+// .wizard > .steps > ul > li{
+
+//     @media(max-width: 680px){
+//         width: 100%;
+//         padding-left: 0;
+//     }
+// }
+
+// .wizard > .steps{
+
+//     @media(max-width: 680px){
+//         padding-left: 0;
+//     }
+// }
+
+.wizard > .content{
+    background: transparent;
+    // box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.wizard, .tabcontrol{
+    overflow: visible;
+}
+
+.step-form-horizontal {
+    .wizard {
+        padding-top: 3.5rem;
+        
+        .steps {
+            li {
+                position: relative;
+
+                &.done {
+                    a {
+                        text-align: center;
+                        background-color: $white;
+                        color: $dark;
+
+                        &:hover {
+                            text-align: center;
+                            background-color: $white;
+                            color: $dark;
+                        }
+
+                        .number {
+                            color: $white;
+                            background: $primary;
+                            border-color: transparent; 
+                        }
+                    }
+                }
+
+                &.current a, &.disabled a {
+                    background-color: transparent;
+                    text-align: center;
+                    color: $white;
+
+                    &:hover, &:active {
+                        background-color: transparent;
+                        color: $white;
+                    }
+                }
+
+                &.current a {
+                    .number {
+                        color: $primary;
+                        background: $white;
+                        border: 2px solid $primary; 
+                    }
+                }
+
+                &.disabled a {
+                    .number {
+                        color: $primary;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    z-index: 1;
+
+                    @include media-breakpoint-down(sm) {
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin: 0;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 0.5rem;
+                        padding-top: 0.9375rem;
+                    }
+
+                    .number {
+                        position: absolute;
+                        top: -100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: $white;
+                        border: 1px solid $border;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 2rem;
+                        border-radius: 50px;
+                        width: 2rem;
+
+                        // @include respond(phone) {
+                        //     width: 4rem;
+                        //     height: 4rem;
+                        // }
+                        
+                    }
+                }
+
+                &:not(:last-child) {
+                    z-index: 1;
+
+                    &::after {
+                        position: absolute;
+                        width: 100%;
+                        height: 0.375rem;
+                        content: "";
+                        left: 50%;
+                        top: -2.1rem;
+                        background-color: $primary;
+                        z-index: -1;
+
+                        @include media-breakpoint-down(xs) {
+                            height: 0.375rem;
+                            top: -1.3125rem;
+                        }
+                    }
+
+                    &.current {
+                        &::after {
+                            background-color: #F3F3F3;
+                        }
+
+
+                        &~li {
+                            &::after {
+                                background-color: #F3F3F3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .actions {
+            padding: 0;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+        }
+    }
+}

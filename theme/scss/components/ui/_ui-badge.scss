@@ -1,0 +1,199 @@
+
+
+
+.badge{
+    line-height: 1.5;
+    // border-radius: 0px;
+    // font-size: 12px;
+    // font-weight: normal;
+    padding: 5px 10px;
+}
+
+.badge-rounded{
+    border-radius: 20px;
+    padding:5px 13px ;
+}
+.badge-circle{
+    border-radius: 100px;
+    height: 25px;
+    width: 25px;
+    padding: 5px 8px;
+}
+
+
+
+
+
+.badge-outline-primary{
+    border: 1px solid $primary;
+    color: $primary;
+}
+
+
+
+.badge-outline-secondary{
+    border: 1px solid $secondary;
+    color: $secondary;
+}
+
+
+
+.badge-outline-success{
+    border: 1px solid $success;
+    color: $success;
+}
+
+
+
+.badge-outline-info{
+    border: 1px solid $info;
+    color: $info;
+}
+
+
+
+.badge-outline-warning{
+    border: 1px solid $warning;
+    color: $warning;
+}
+
+
+
+.badge-outline-danger{
+    border: 1px solid $danger;
+    color: $danger;
+}
+
+
+
+.badge-outline-light{
+    border: 1px solid $border;
+    color: $dark;
+}
+
+
+
+.badge-outline-dark{
+    border: 1px solid $dark;
+    color: $dark;
+}
+
+
+
+// .badge-xs {
+//     font-size: 10px;
+//     padding: 0px 10px;
+//     line-height: 18px;
+// }
+
+
+// .badge-sm {
+//     font-size: 12px;
+//     padding: 0px 8px;
+//     line-height: 22px;
+// }
+
+
+// .badge-md {
+//     font-size: 13px;
+//     padding: 0px 9px;
+//     line-height: 25px;
+// }
+
+
+// .badge-lg {
+//     font-size: 14px;
+//     padding: 0px 10px;
+//     line-height: 30px;
+// }
+
+
+// .badge-xl {
+//     font-size: 15px;
+//     padding: 0px 15px;
+//     line-height: 35px;
+// }
+
+
+
+
+
+
+
+
+
+
+.badge-default{
+    background: #ADB6C7;
+}
+
+.badge-success {
+    background-color: $success;
+}
+
+.badge-info {
+    background-color: $info;
+}
+
+.badge-primary {
+    background-color: $primary;
+}
+
+.badge-warning {
+    background-color: $warning;
+}
+
+.badge-danger {
+    background-color: $danger;
+}
+
+.badge-dark {
+    background-color: $dark;
+}
+
+.badge-light {
+    background-color: $light;
+}
+
+
+
+
+
+
+
+//
+
+.bootstrap-label{
+    .label{
+        display: inline-block;
+        margin-right: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.badge-demo{
+
+    .badge{
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.bootstrap-badge-buttons{
+
+    button{
+        margin-right: .2rem;
+        margin-bottom: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

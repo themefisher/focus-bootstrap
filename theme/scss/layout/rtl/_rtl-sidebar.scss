@@ -1,0 +1,52 @@
+
+
+//sidebar styles
+[direction="rtl"] {
+    .quixnav {
+        text-align: right;
+        @include respond('big-desktop') {
+            right: 3.125rem;
+        }
+
+        .metismenu {
+            li.active {
+
+                &>.has-arrow {
+                    &:after {
+                        transform: rotate(45deg) translateY(-50%);
+                    }
+                }
+
+            }
+
+            .has-arrow {
+                &:after {
+                    left: 2.5rem;
+                    right: auto;
+                }
+            }
+
+        }
+    }
+
+    &[data-sidebar-style="full"][data-layout="vertical"] {
+        .menu-toggle {
+            .quixnav {
+                .metismenu {
+                    li {
+                        &>ul {
+    
+                            li:hover {
+                                ul {
+                                    right: 11.8125rem;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
