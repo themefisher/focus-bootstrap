@@ -1,6 +1,6 @@
 # Focus Admin Dashboard Template
 
-![focus](https://demo.themefisher.com/thumbnails/focus.png)
+![focus](https://assets.teamosis.com/thumbs/focus.png)
 
 <!-- download -->
 ## Download
